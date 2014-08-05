@@ -1,0 +1,28 @@
+#This is a simple Python Program to generate an Arithmetic Progression and the Cumulative Sum at each Step 
+#t is initialized to give a suffix in the print statement later
+t=0
+#Sum is initialized to zero
+sum=0
+#Initializing the counter to 1
+i=1
+num=int(raw_input("Enter a number:\n"))
+sum=num
+while num<50:
+    num=num+2
+    i=int(i)+1
+    if i==1:
+        t="st"
+    elif i==2:
+        t="nd"
+    elif i==3:
+        t="rd"
+    else:
+        t="th"
+    print("The");print(int(i));print(t);print("number in the series is");print(num)
+    sum=sum+num
+    print("The cumulative sum of numbers is");print(sum)
+#A simpler method...in case the step-wise total is not needed
+#a=range(2,50,2)
+#print(a)
+
+
