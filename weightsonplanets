@@ -1,0 +1,60 @@
+#Find your weight on different planets
+#Data provided-surface gravity on planets
+sun=274
+jupiter=24.92
+neptune=11.15
+saturn=10.44
+earth=9.798
+uranus=8.87
+venus=8.87
+mars=3.71
+mercury=3.7
+moon=1.62
+pluto=0.58
+
+name=raw_input("Welcome to Planetary Weight Calculator, Please Enter your Name\n")
+
+weight=raw_input("Enter your weight on earth\n")
+
+#weight=mass*surface gravity
+
+mass=float(weight)/float(earth)
+
+#Calculate Weights on Planets
+sunw=mass*sun
+jupiterw=mass*jupiter
+neptunew=mass*neptune
+saturnw=mass*saturn
+uranusw=mass*uranus
+venusw=mass*venus
+marsw=mass*mars
+mercuryw=mass*mercury
+moonw=mass*moon
+plutow=mass*pluto
+
+print("Feeling Obese/Skinny on Planet Earth?\n")
+print("Sun\n Jupiter\n Neptune\n Saturn\n Uranus\n Venus\n Mars\n Mercury\n Moon\n Pluto\n")
+print(str(name));planet=raw_input("Decide where do you want to go:\n")
+
+if planet in ('Sun','sun','SUN'):
+    print("Your Weight on"); print(planet);print(float(sunw));print("This is in case you manage to survive the 15 million degrees celsius temperature\n")
+elif planet in ('jupiter','Jupiter','JUPITER'):
+    print("Your Weight on"); print(planet);print(float(jupiterw))
+elif planet in ('neptune','Neptune','NEPTUNE'):
+    print("Your Weight on"); print(planet);print(float(neptunew))
+elif planet in ('saturn','Saturn','SATURN'):
+    print("Your Weight on"); print(planet);print(float(saturnw))
+elif planet in('uranus','Uranus','URANUS'):
+    print("Your Weight on"); print(planet);print(float(uranusw));print("Feeling better now?\n")
+elif planet in ('venus','Venus','VENUS'):
+    print("Your Weight on"); print(planet);print(float(venusw))
+elif planet in ('mars','Mars','MARS'):
+    print("Your Weight on"); print(planet);print(float(marsw))
+elif planet in ('mercury','Mercury','MERCURY'):
+    print("Your Weight on"); print(planet);print(float(mercuryw))
+elif planet in ('moon','Moon','MOON'):
+    print("Your Weight on"); print(planet);print(float(moonw))
+elif planet in ('pluto','Pluto','PLUTO'):
+    print("Your Weight on"); print(planet);print(float(plutow));print("You will be literally blown away!\n")
+else:
+    print("Never heard of this planet! Please re-think!!")
